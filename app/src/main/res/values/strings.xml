@@ -3,5 +3,6 @@
     <string name="app_name">DynaPark</string>
     <string name="entrar">Entrar</string>
     <string name="text_cadastro">Cadastre-se!</string>
+    <string name="title_cadastro">Cadastre-se aqui!</string>
 
 </resources>

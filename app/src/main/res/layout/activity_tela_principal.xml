@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <ImageView
+
+        android:id="@+id/logo_telaprincipal"
+        android:src="@drawable/dplogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <Button
+
+        android:id="@+id/bt_qrcode"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QRCode"
+        android:layout_marginLeft="15dp"
+        android:layout_marginVertical="125dp"
+
+        />
+
+    <View
+
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="75dp"
+        android:alpha="0.4"
+
+        />
+
+    <Button
+
+        android:id="@+id/bt_entrada"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Entrada"
+        android:layout_marginVertical="550dp"
+
+        />
+
+    <Button
+
+        android:id="@+id/bt_saida"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saída"
+        android:layout_marginVertical="550dp"
+        android:layout_marginHorizontal="265dp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/text_tempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tempo de Uso: 0 min"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="200dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+
+        android:id="@+id/text_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor: R$ 0,00"
+        android:layout_marginHorizontal="225dp"
+        android:layout_marginTop="125dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+
+        />
+
+</RelativeLayout>

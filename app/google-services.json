@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "914034879530",
+    "project_id": "dynapark-77c7a",
+    "storage_bucket": "dynapark-77c7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914034879530:android:40feb90984058676592753",
+        "android_client_info": {
+          "package_name": "com.example.dynapark"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH2VhawergxNlrF_akBk2rgybuI02KTuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

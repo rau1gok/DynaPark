@@ -53,7 +53,33 @@ function stopTimer() {
     const remainingSeconds = elapsedTime % 60;
     const valorAPagar = (totalMinutes + remainingSeconds / 60) * 5;
 
+    // Exibe o histórico de estacionamento
+    const dataAtual = new Date().toLocaleString();
+    const historicoItem = document.createElement('li');
+    historicoItem.textContent = `Entrada/Saída: ${dataAtual} - Tempo: ${formatTime(elapsedTime)} - Valor: R$ ${valorAPagar.toFixed(2)}`;
+    historicoList.appendChild(historicoItem);
+
+    // Armazena o histórico no localStorage
+    const historico = JSON.parse(localStorage.getItem('historico')) || [];
+    historico.push({
+        data: dataAtual,
+        tempo: formatTime(elapsedTime),
+        valor: valorAPagar.toFixed(2)
+    });
+    localStorage.setItem('historico', JSON.stringify(historico));
+
     alert(`Tempo total: ${formatTime(elapsedTime)}\nValor a ser pago: R$ ${valorAPagar.toFixed(2)}`);
+}
+
+// Função para carregar o histórico ao carregar a página
+function loadHistorico() {
+    const historico = JSON.parse(localStorage.getItem('historico')) || [];
+    historicoList.innerHTML = '';
+    historico.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `Entrada/Saída: ${item.data} - Tempo: ${item.tempo} - Valor: R$ ${item.valor}`;
+        historicoList.appendChild(li);
+    });
 }
 
 // Funções para abrir e fechar o menu
@@ -67,3 +93,8 @@ closeBtn.addEventListener('click', () => {
 
 entradaBtn.addEventListener('click', startTimer);
 saidaBtn.addEventListener('click', stopTimer);
+
+// Carrega o histórico ao carregar a página
+window.onload = function() {
+    loadHistorico();
+};

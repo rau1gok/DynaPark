@@ -81,7 +81,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
     text-align: center;
-    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .header {
@@ -112,4 +112,32 @@ body {
 
 .button:hover {
     background-color: #5d005f;
+}
+
+.historico {
+    background-color: #ffffff97;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.historico h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.historico ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.historico ul li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
